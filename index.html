@@ -2,7 +2,6 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aprendendo Reactjs</title>
     </head>
     <body>
@@ -11,18 +10,14 @@
         <!-- Scripts React (Responsavel por carregar a biblioteca do React) e React-DON (Responsavel por manipular DOM - DOCUMENT OBJECT MODEL)-->
         <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    
-        <script type="text/javascript">
+        <!-- Babel Script -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/jsx">
             const app = document.getElementById('app');
 
-            const header = document.createElement('h1');
-
-            const text = 'Learn REACTJS';
-            const headerContent = document.createTextNode(text);
-
-            header.appendChild(headerContent);
-
-            app.appendChild(header);
+            const root = ReactDOM.createRoot(app);
+            root.render(<h1> Learn Reactjs and Nextjs </h1>);
         </script>
     </body>
 </html>
