@@ -21,9 +21,19 @@
             }
 
             function HomePage() {
+                const metasProfissionais = ['Web Developer', 'Designi', 'Social Media', 'Work HomeOfice']
+
                 return (
                     <div>
                         <Header title='Learn Reactjs and Nextjs' />
+
+                        <ul>
+                            {
+                                metasProfissionais.map((meta) => (
+                                    <li key={meta}>{meta}</li>
+                                ))
+                            }
+                        </ul>
                     </div>
                 ); 
             }
